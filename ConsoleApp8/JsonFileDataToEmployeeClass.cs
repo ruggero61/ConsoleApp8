@@ -12,7 +12,7 @@
     }
 
     public EmployeesCollection GetEmployeesFromJsonFile() => 
-      new EmployeesCollection(_fileManager.GetEmployeesFronJsonFile());
+      new EmployeesCollection(_fileManager.GetEmployeesFromJsonFile());
   }
   public class JsonFileDataToClass
   { 
@@ -26,6 +26,6 @@
     }
 
     public EmployeesCollection GetEmployeesFromJsonFile() => 
-      new EmployeesCollection(_fileManager.GetEmployeesFronJsonFile());
+      new EmployeesCollection(_fileManager.GetEmployeesFromJsonFile());
   }
 }

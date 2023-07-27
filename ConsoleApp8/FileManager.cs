@@ -11,7 +11,7 @@ namespace ruggero61
       _jsonFilePath = jsonFilePath;
     }
 
-    public List<Employee>? GetEmployeesFronJsonFile()
+    public List<Employee>? GetEmployeesFromJsonFile()
       => File.Exists(_jsonFilePath)
          ? JsonConvert.DeserializeObject<List<Employee>>(File.ReadAllText(_jsonFilePath))
          : throw new FileNotFoundException($"JSON File not found: {_jsonFilePath}");
